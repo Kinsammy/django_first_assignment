@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Django Class</title>
+</head>
+<body>
+      <h1>Wlcome to Django Class for Cohort 13</h1>
+      <ul>
+        {% for post in posts %}
+          <li>{{ post.title }}</li>
+          <li>{{ post.body }}</li>
+          <li>Posted by:  {{ post.author }}</li>
+        {% endfor %}
+      </ul>
+
+
+</body>
+</html>
